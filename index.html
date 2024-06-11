@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cloudflare turnsitle</title>
+    <link rel="stylesheet" href="static/css/tailwind.min.css">
+</head>
+<body class="bg-gray-200 h-screen grid place-items-center">
+
+<div class="bg-white rounded-lg w-1/2 h-1/2 mx-4 flex flex-col">
+    <form action="/save" method="post">
+        <h1 class="text-center text-3xl p-4 font-bold">登录</h1>
+        <div class="flex p-2 w-full justify-center">
+            邮箱：
+            <input type="text" name="email" class="border-2 w-9/12 rounded">
+        </div>
+        <div class="flex justify-center p-2 w-full">
+            密码：
+            <input type="text" name="password" class="border-2 w-9/12 rounded">
+        </div>
+        <div class="cf-turnstile" data-sitekey="" data-callback="javascriptCallback"></div>
+        <div class="justify-center flex">
+            <button type="submit" class="bg-blue-500 text-white mt-4 p-4 w-10/12 rounded text-center">提交</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

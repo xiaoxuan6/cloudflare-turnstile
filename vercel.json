@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/save",
+      "dest": "/api/api.go"
+    }
+  ]
+}
